@@ -21,7 +21,7 @@ public class StageInitializer implements ApplicationListener<JavaFxApplication.S
     public void onApplicationEvent(JavaFxApplication.StageReadyEvent event) {
         Stage stage = event.getStage();
         // Загружаем контроллер и представление через FxWeaver
-        Parent root = fxWeaver.loadView(HelloController.class); // Ваш контроллер
+        Parent root = fxWeaver.loadView(TestWindowController.class); // Ваш контроллер
         Scene scene = new Scene(root, 600, 400);
         stage.setScene(scene);
         stage.setTitle("JavaFX + Spring Boot");
