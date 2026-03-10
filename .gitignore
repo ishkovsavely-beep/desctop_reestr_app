@@ -63,3 +63,32 @@ build/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Spring Boot и JPA
+application.properties
+application-*.properties
+!application-example.properties
+
+# Локальные файлы БД
+*.db
+*.mv.db
+*.h2.db
+
+# Логи Spring Boot
+logs/
+spring.log
+
+# Временные файлы
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Дополнительные файлы IDEA
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/shelf/
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
